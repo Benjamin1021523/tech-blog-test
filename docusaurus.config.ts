@@ -69,54 +69,22 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    colorMode: {
-      respectPrefersColorScheme: true,
-    },
     navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: '我的技術筆記',
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'playlistOne',
           position: 'left',
-          label: 'Tutorial',
+          label: '入門清單',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          type: 'docSidebar',
+          sidebarId: 'playlistTwo',
+          position: 'left',
+          label: '進階專題',
         },
       ],
-    },
-    themeConfig: {
-	  navbar: {
-		title: '我的技術筆記',
-		items: [
-		  {
-			type: 'docSidebar',
-			sidebarId: 'playlistOne',
-			position: 'left',
-			label: '入門清單',
-		  },
-		  {
-			type: 'docSidebar',
-			sidebarId: 'playlistTwo',
-			position: 'left',
-			label: '進階專題',
-		  },
-		],
-	  },
-	},
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 };
