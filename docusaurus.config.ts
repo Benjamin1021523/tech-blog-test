@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://benjamin1021523.github.io/tech-blog-test/',
+  url: 'https://benjamin1021523.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: 'tech-blog-test/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
