@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktech_blog=globalThis.webpackChunktech_blog||[]).push([[8685],{6231(t){t.exports=JSON.parse('{"tags":[{"label":"Tag-1","permalink":"/tech-blog-test/docs/tags/tag-1","count":1},{"label":"Tag-2","permalink":"/tech-blog-test/docs/tags/tag-2","count":2}]}')}}]);
