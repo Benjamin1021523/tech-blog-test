@@ -74,15 +74,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'playlistOne',
+          sidebarId: 'root',
           position: 'left',
-          label: '入門清單',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'playlistTwo',
-          position: 'left',
-          label: '進階專題',
+          label: '文章清單',
         },
       ],
     },

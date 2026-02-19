@@ -13,22 +13,22 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  Create as many sidebars as you want.
  */
 const sidebars = {
-  // 清單一：包含 A 和 B
-  playlistOne: [
+  root: [
     {
       type: 'category',
       label: '🚀 入門清單 [A, B]',
-      items: ['doc-a', 'doc-b'], // 這裡定義排序
+      collapsible: true, // 允許折疊
+      collapsed: true, // 讓它預設關閉
+      items: ['doc-a', 'doc-b'],
     },
-  ],
-  // 清單二：包含 C 和 A (自定義排序)
-  playlistTwo: [
     {
       type: 'category',
       label: '🔥 進階專題 [C, A]',
-      items: ['doc-c', 'doc-a'], // 這裡定義不同的排序
+      collapsible: true, // 允許折疊
+      collapsed: true, // 讓它預設關閉
+      items: ['doc-c', 'doc-a'],
     },
-  ],
+  ]
 };
 
 export default sidebars;
