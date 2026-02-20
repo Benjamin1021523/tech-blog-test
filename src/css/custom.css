@@ -28,3 +28,52 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* QA 對話框基礎樣式 */
+.chat-wrapper {
+  display: flex;
+  margin: 1.5rem 0;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.chat-avatar {
+  font-size: 1.5rem;
+  min-width: 30px;
+}
+
+.chat-bubble {
+  padding: 10px 16px;
+  border-radius: 18px;
+  max-width: 75%;
+  line-height: 1.5;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 發問樣式 (靠左) */
+.chat-q {
+  flex-direction: row;
+}
+.chat-q .chat-bubble {
+  background-color: #3578e5; /* Docusaurus 藍 */
+  color: white;
+  border-top-left-radius: 2px;
+}
+
+/* 回應樣式 (靠右) */
+.chat-a {
+  flex-direction: row-reverse;
+}
+.chat-a .chat-bubble {
+  border-top-right-radius: 2px;
+}
+
+[data-theme='light'] .chat-a .chat-bubble {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+[data-theme='dark'] .chat-a .chat-bubble {
+  background-color: #2f2f2f;
+  color: #e3e3e3;
+}
